@@ -9,5 +9,6 @@
 
 class Fruit
 {
-
+public:
+	Location fLoc = { 0,0 };
 };
