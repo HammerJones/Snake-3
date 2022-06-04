@@ -27,6 +27,11 @@ public:
 	Snake snake;
 	Fruit fruit[Source::maxSize];
 
+	bool gameOver = false;
+	bool gamePaused = false;
+	bool gameIsStarted = false;
+	bool drawn = false;
+
 	int size = Source::size;
 	int score = (size - Source::size) * 10;
 	int refresh = Source::refresh;
@@ -41,11 +46,14 @@ public:
 
 	string brd[width][height];
 	string scoreMes = Source::scoreMes;
+	string gameOverMessage = "GAME OVER!";
+	string finalScore = "Final Score: ";
 
 	void composeBoard();
 	void getUserInput();
 	void updateScore();
 	void drawToBoard(Location loc, string str);
+	void drawToBoard(Location loc, char str);
 	void moveSnake();
 	void refreshFrame();
 	void testBoarders();
@@ -53,4 +61,7 @@ public:
 	void drawFruit();
 	void testFruit();
 	void growSnake();
+	void drawGameOverMessage();
+	void menu();
+	void restart();
 };

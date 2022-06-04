@@ -8,3 +8,12 @@ void Cursor::printChar(Location loc, string str)
 	SetConsoleCursorPosition(hConsole, pos);
 	std::cout << str;
 }
+
+void Cursor::printChar(Location loc, char ch)
+{
+	curLoc.equals(loc);
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD pos = { loc.x, loc.y };
+	SetConsoleCursorPosition(hConsole, pos);
+	std::cout << ch;
+}

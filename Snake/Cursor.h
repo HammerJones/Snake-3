@@ -14,4 +14,5 @@ class Cursor
 	Location curLoc = { 0,0 };
 public:
 	void printChar(Location loc, string str);
+	void printChar(Location loc, char ch);
 };
