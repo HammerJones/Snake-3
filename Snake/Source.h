@@ -34,7 +34,7 @@ namespace Source
 	static const bool gameIsPaused = false; //True when player pauses game
 	/*----------Strings---------*/
 	static const string scoreMes = "Score: "; //Formatted Score 
-	static const string info = "[W][A][S][D] to move\n[Q] to quit to menu\n[P] to pause game"; //Movement and controls info
+	static const string info = "[W][A][S][D] to move\n[Q] to quit to menu\n[P] to pause game\n[R] to restart after gameover"; //Movement and controls info
 	/*----------Misc Objects----*/
 	//Location initLoc = { 3,3 }; //Starting location of Snake
 }
